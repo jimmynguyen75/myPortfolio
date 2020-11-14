@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#041E42">
+  <link rel="manifest" href="/manifest.json">
+  <title>Jimmy Nguyen</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fixed.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/4d1a693bd5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- My JAVASRIPT -->
+
+  <script>
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('.caption').addClass('color');
+      } else {
+        $('.caption').removeClass('color');
+      }
+    })
+  </script>
+  <!-- End JAVASRIPT -->
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+  <!-- Home Section -->
+  <div id="home">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="background: rgba(0, 0, 0, 0.1)!important">
+      <a class="navbar-brand" href="#"><img alt="Jimmy Nguyen" src="img/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">H ome</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#school" class="nav-link">School</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Landing Page -->
+  <div class="landing">
+    <div class="home-wrap">
+      <div class="home-inner" style="background-image: url(img/background.jpg)">
+      </div>
+    </div>
+  </div>
+  <div class="caption text-center">
+    <h1>Welcome to my Portfolio</h1>
+    <h3>Designed by Jimmy Nguyen</h3>
+    <div>
+      <a href="#about" class="btn btn-outline-light">
+        <span class="spinner-grow spinner-grow-sm"></span>
+        Get Started
+      </a>
+    </div>
+  </div>
+  <!-- End Landing Page -->
+  <!-- End Home Section -->
+
+
+  <!-- About Section -->
+  <div id="about" class="offset">
+    <div id="slides" class="carousel slide" data-ride="carousel" data-interval="false">
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+      </ul>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="height: 100vh;">
+          <img src="img/1.jpg" alt="">
+          <div class="carousel-caption">
+            <!-- <h1 class="display-2">Bootstrap</h1>
+            <h3>Complete Website Layout</h3>
+            <button class="btn btn-outline-light btn-lg" type="button" name="button">View Demo</button>
+            <button type="button" class="btn btn-primary btn-lg" name="button">Get Started</button> -->
+            <div class="col-md-12 narrow clients text-center">
+              <div class="about">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="img/about.png" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <blockquote>
+                      <div class="about-info text-left">
+                        <p><strong>Name: </strong>Thu Minh Nguyen (Jimmy)</p>
+                        <p><strong>Specialization: </strong>Bridge Software Engineering (BrSE)</p>
+                        <p><strong>School: </strong>FPT University </p>
+                        <p><strong>Contact: </strong>thunmse63180@fpt.edu.vn</p>
+                      </div>
+                      <hr class="clients-hr">
+                      <cite>&#8212; Every problem has a solution, every solution has a problem</cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="height: 100vh;">
+          <img src="img/2.jpg" alt="">
+        </div>
+        <div class="carousel-item" style="height: 100vh;">
+          <img src="img/3.png" alt="">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#slides" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#slides" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  <!-- End About Section -->
+
+  <!-- School Section -->
+  <div id="school" class="offset">
+    <div class="jumbotron">
+
+      <!-- Heading -->
+      <div class="col-12 text-center">
+        <h3 class="heading">Schools</h3>
+        <div class="heading-underline">
+        </div>
+      </div>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="container">
+        <div class=" d-flex row justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow mx-auto" style="width: 18rem;">
+              <div class="inner">
+                <img src="img/kdu.jpg" alt="KDU" class="card-img-top">
+              </div>
+              <div class="card-body text-center">
+                <blockquote>
+                  <h5 class="card-title">KDU University College</h5>
+                  <div class="card-text"><i class="fas fa-quote-left"></i>I had an opportunity to study English in KDU Penang of Malaysia. With the international environment in which I can learn English with foreign teachers and exchange cultures
+                    with
+                    overseas friends as well. My
+                    communication skills have been enhanced and I got useful knowledge from this study tour. “Travel broadens the mind”<br>
+                    <hr> <i class="fas fa-map-marker-alt"></i> Penang, Malaysia</div>
+                  <a href="https://uowmkdu.edu.my/" class="btn btn-primary" target="_blank">Learn more</a>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <!-- End Card 1 -->
+
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow mx-auto" style="width: 18rem;">
+              <div class="inner">
+                <img src="img/itm.jpg" alt="KDU" class="card-img-top">
+              </div>
+              <div class="card-body text-center">
+                <blockquote>
+                  <h5 class="card-title">ITM University</h5>
+                  <div class="card-text"><i class="fas fa-quote-left"></i>I studied many subjects relating to Information Technology in ITM University which is known as highly reputable engineering training courses, especially Data
+                    Structure with specific Algorithm. Here
+                    in
+                    India I gained specialized knowledge for my software engineering major and was approached to the modern largest exporters of information technology and business process outsourcing services. “Technology for Innovators”<br>
+                    <hr><i class="fas fa-map-marker-alt"></i> Gwalior, India</div>
+                  <a href="http://itmuniversity.ac.in/" class="btn btn-primary" target="_blank">Learn more</a>
+
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <!-- End Card 2 -->
+
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow mx-auto" style="width: 18rem;">
+              <div class="inner">
+                <img src="img/FPT.png" alt="KDU" class="card-img-top">
+              </div>
+              <div class="card-body text-center">
+                <blockquote>
+                  <h5 class="card-title">FPT University</h5>
+                  <div class="card-text"><i class="fas fa-quote-left"></i>I am a senior software engineering student at Fpt University which is one of the top schools in Vietnam with effective teaching methods along with professional lecturers in
+                    totally
+                    English-using environment. I am not
+                    only
+                    trained specialized knowledge but also soft skills, especially experience practical working environments during On the job training semester. “Digitally Yours”<br>
+                    <hr><i class="fas fa-map-marker-alt"></i> Saigon, Vietnam</div>
+                  <a href="http://fpt.edu.vn" class="btn btn-primary" target="_blank">Learn more</a>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <!-- End Card 3 -->
+
+        </div>
+      </div>
+      <!-- End Card -->
+    </div>
+  </div>
+  <!-- End School Section -->
+
+  <!-- Skills Section -->
+  <div id="skills" class="offset">
+    <div class="fixed-background">
+
+      <!-- Main -->
+      <div class="row dark text-center">
+        <!-- Heading -->
+        <div class="col-12">
+          <h3 class="heading">My Skills</h3>
+          <div class="heading-underline">
+          </div>
+        </div>
+        <!-- End Heading -->
+
+        <!-- Process -->
+        <div class="narrow col-8 text-left">
+          <div class="skill">
+            <h5>HTML</h5>
+            <div class="progress" style="height: 1.5rem;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+            </div>
+            <h5>CSS</h5>
+            <div class="progress" style="height: 1.5rem;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+            </div>
+            <h5>JAVASRIPT</h5>
+            <div class="progress" style="height: 1.5rem;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%">30%</div>
+            </div>
+            <h5>JAVA</h5>
+            <div class="progress" style="height: 1.5rem;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+            </div>
+            <h5>C</h5>
+            <div class="progress" style="height: 1.5rem;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-sucess" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+            </div>
+          </div>
+        </div>
+        <!-- End Process -->
+      </div>
+      <!-- End Main -->
+
+      <!-- Fixed-background -->
+      <div class="fixed-wrap">
+        <div class="fixed" style="background-image: url(img/fixed.png)">
+        </div>
+      </div>
+      <!-- End Fixed -->
+    </div>
+  </div>
+  <!-- End Skills Section -->
+
+
+
+  <!-- Contact Section -->
+
+
+
+  <!-- End Contact Section -->
+  <div id="contact" class="offset">
+    <footer>
+      <div class="row justify-content-center text-left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.605620565544!2d106.8076381149484!3d10.84146276095403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752731176b07b1%3A0xb752b24b379bae5e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQ!5e0!3m2!1svi!2s!4v1571407192319!5m2!1svi!2s"
+          style="border:0;" allowfullscreen=""></iframe>
+        <div class="col-md-5 text-center">
+          <img src="img/logo.png" alt="">
+          <p><i class="fa fa-map-marker"></i><strong> Address: </strong>Saigon City, Vietnam</p>
+          <p><i class="fa fa-phone"></i><strong> Contact: </strong>(+84) 868470598</p>
+          <p><i class="fas fa-envelope"></i><strong> Email: </strong>thunmse63180@fpt.edu.vn</p>
+          <a href="https://www.facebook.com/jimnguyen0705" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <hr class="socket">
+        &copy; Jim.
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      console.log("Will the service worker register?");
+      navigator.serviceWorker.register('service-worker.js')
+        .then(function(reg) {
+          console.log("Yes, it did.");
+        }).catch(function(err) {
+          console.log("No it didn't. This happened:", err)
+        });
+    }
+  </script>
+</body>
+
+
+</html>
